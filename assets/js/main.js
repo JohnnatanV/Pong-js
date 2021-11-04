@@ -129,13 +129,13 @@ var game = (function () {
   document.onkeydown = function (e) {
     e = e || window.event;
     switch (e.keyCode) {
-      case 87: // W
-      case 83: // S
+      case 81: // Q
+      case 65: // A
         player1.keyCode = e.keyCode;
         player1.keyPress = true;
         break;
-      case 38: // ArrowUp
-      case 40: // ArrowDown
+      case 79: // O
+      case 76: // L
         player2.keyCode = e.keyCode;
         player2.keyPress = true;
         break;
@@ -143,8 +143,8 @@ var game = (function () {
   };
 
   document.onkeyup = function (e) {
-    if (e.keyCode == 87 || e.keyCode == 83) player1.keyPress = false;
-    if (e.keyCode == 38 || e.keyCode == 40) player2.keyPress = false;
+    if (e.keyCode == 81 || e.keyCode == 65) player1.keyPress = false;
+    if (e.keyCode == 79 || e.keyCode == 76) player2.keyPress = false;
   };
 
   start();
