@@ -27,7 +27,7 @@ var game = (function () {
 
   function stop() {
     clearInterval(controlGame);
-    document.body.style.background = "#f00";
+    document.body.style.background = "#ff3344";
   }
 
   function play() {
